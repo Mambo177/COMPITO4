@@ -1,0 +1,13 @@
+La procedura per la trasmissione di un pacchetto da un dispositivo mittente a un dispositivo destinatario in una rete remota coinvolge diverse fasi:
+
+1. Rilevamento del destinatario: Inizialmente, il dispositivo mittente ricerca l'indirizzo MAC del gateway predefinito (router) associato all'indirizzo IP del destinatario mediante la consultazione della tabella ARP (Address Resolution Protocol).
+
+2. Inoltro al gateway predefinito: Successivamente, il dispositivo mittente inoltra il pacchetto al router utilizzando l'indirizzo MAC ottenuto dalla tabella ARP.
+
+3. Instradamento: Il router riceve il pacchetto e, mediante la valutazione delle rotte disponibili, determina il percorso più efficiente per raggiungere la rete di destinazione.
+
+4. Inoltro del pacchetto: Il router, in base alla sua tabella di routing, inoltra il pacchetto al dispositivo destinatario all'interno della rete di destinazione, utilizzando l'indirizzo MAC appropriato.
+
+5. Consegna al destinatario: Infine, una volta che il pacchetto raggiunge la rete di destinazione, viene consegnato al dispositivo destinatario sulla base del suo indirizzo MAC.
+
+Questo processo coinvolge sia il livello 2 (data link layer), mediante l'utilizzo degli indirizzi MAC per la comunicazione all'interno della stessa rete locale, sia il livello 3 (network layer), attraverso l'impiego degli indirizzi IP e delle tecniche di routing per la comunicazione tra reti distinte.
